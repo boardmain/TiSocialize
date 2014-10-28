@@ -16,9 +16,12 @@ With this module you can use the [Socialize SDK](http://getsocialize.com) To you
 Fix Pinterset Share
 Fix OpenApp from Socialize View
 
-## RESULTS
+## RESULTS AND PREVIEW
 
 you can try  the result with the  [Vangle APP](https://itunes.apple.com/it/app/vangle-shop/id746300889?mt=8&uo=4) and here se the [Socialize social Page](http://besoci.al/yQgTT)
+
+[![Video Preview](http://img.youtube.com/vi/EaB72VhLa0I/0.jpg)](http://youtu.be/EaB72VhLa0I)
+
 
 ## DONATIONS
 
