@@ -85,8 +85,8 @@ var bar2 = sdksocialize.createLikeView({
    bottom:20,
    height:100,
    width:200,
-   url:"http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-fanculo-panzone-25.png",
-   image:"http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-fanculo-panzone-25.png",
+   url:"http://vangle.cdnscsoft.com/image/cache/data/borse/buste/borsa-in-pelle-fiorita-390x390.jpg",
+   image:"http://vangle.cdnscsoft.com/image/cache/data/borse/buste/borsa-in-pelle-fiorita-390x390.jpg",
    name:"Panzone",
    backgroundColor:"black"
 });
