@@ -18,6 +18,11 @@ Fix OpenApp from Socialize View
 
 you can try  the result with the  [Vangle APP](https://itunes.apple.com/it/app/vangle-shop/id746300889?mt=8&uo=4) and here se the [Socialize social Page](http://besoci.al/yQgTT)
 
+## DONATIONS
+
+If you like my work and help me to mantain updated this module you can donate with paypal
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMM8H8RQ4WQBY"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="[paypal]" /></a>
+
 
 ## Community Driven
 
