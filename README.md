@@ -9,6 +9,8 @@ With this module you can use the [Socialize SDK](http://getsocialize.com) To you
 - Copy the content of the folder "AddToYourFrameWorkFolder" to a folder in your system and put the path to the file iphone/module.xcconfig and replace this TITANIUM_THIRDPARTY = "/Users/francesco/Library/Application\ Support/Titanium/thirdparty" with your path
 - Copy the content of the folder "AddToYourAppAssetsFolder" in your assets folder (for alloy project) or Resource folder (for standard project)
 - build the module with build.py script and add it to titanium	
+- modify the CFBundleURLName and CFBundleURLSchemes to your tiapp.xml with your app url
+ 
 
 ## TODO
 Fix Pinterset Share
