@@ -10,8 +10,9 @@ With this module you can use the [Socialize SDK](http://getsocialize.com) To you
 - Copy the content of the folder "AddToYourAppAssetsFolder" in your assets folder (for alloy project) or Resource folder (for standard project)
 - build the module with build.py script and add it to titanium	
 
-
-
+## TODO
+Fix Pinterset Share
+Fix OpenApp from Socialize View
 
 ## Community Driven
 
