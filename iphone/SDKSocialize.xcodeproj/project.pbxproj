@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		13019B1819D464FA00EA0F96 /* ItScosftSdksocializeLikeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13019B1619D464FA00EA0F96 /* ItScosftSdksocializeLikeView.h */; };
+		13019B1919D464FA00EA0F96 /* ItScosftSdksocializeLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13019B1719D464FA00EA0F96 /* ItScosftSdksocializeLikeView.m */; };
+		13019B1C19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 13019B1A19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.h */; };
+		13019B1D19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13019B1B19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.m */; };
+		131CCD4119D0474400FB0EB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4019D0474400FB0EB3 /* CoreLocation.framework */; };
+		131CCD4319D0474A00FB0EB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4219D0474A00FB0EB3 /* MapKit.framework */; };
+		131CCD4519D0475000FB0EB3 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4419D0475000FB0EB3 /* MessageUI.framework */; };
+		131CCD4719D0475400FB0EB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4619D0475400FB0EB3 /* QuartzCore.framework */; };
+		131CCD4919D0475900FB0EB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4819D0475900FB0EB3 /* CoreGraphics.framework */; };
+		131CCD4B19D0475D00FB0EB3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131CCD4A19D0475D00FB0EB3 /* AdSupport.framework */; };
+		1343120619D1779E0090C7C5 /* ItScosftSdksocializeBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1343120419D1779E0090C7C5 /* ItScosftSdksocializeBarView.h */; };
+		1343120719D1779E0090C7C5 /* ItScosftSdksocializeBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1343120519D1779E0090C7C5 /* ItScosftSdksocializeBarView.m */; };
+		1343120A19D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1343120819D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.h */; };
+		1343120B19D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1343120919D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.m */; };
+		13BBD0C619EE5C3400EA0EE2 /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BBD0C419EE5C3400EA0EE2 /* Pinterest.framework */; };
+		13BBD0C719EE5C3400EA0EE2 /* Socialize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BBD0C519EE5C3400EA0EE2 /* Socialize.framework */; };
+		24DD6CF91134B3F500162E58 /* ItScosftSdksocializeModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ItScosftSdksocializeModule.h */; };
+		24DD6CFA1134B3F500162E58 /* ItScosftSdksocializeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ItScosftSdksocializeModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.m */; };
+		AA747D9F0F9514B9006C5449 /* ItScosftSdksocialize_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ItScosftSdksocialize_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SDKSocialize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13019B1619D464FA00EA0F96 /* ItScosftSdksocializeLikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeLikeView.h; path = Classes/ItScosftSdksocializeLikeView.h; sourceTree = "<group>"; };
+		13019B1719D464FA00EA0F96 /* ItScosftSdksocializeLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeLikeView.m; path = Classes/ItScosftSdksocializeLikeView.m; sourceTree = "<group>"; };
+		13019B1A19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeLikeViewProxy.h; path = Classes/ItScosftSdksocializeLikeViewProxy.h; sourceTree = "<group>"; };
+		13019B1B19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeLikeViewProxy.m; path = Classes/ItScosftSdksocializeLikeViewProxy.m; sourceTree = "<group>"; };
+		131CCD4019D0474400FB0EB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		131CCD4219D0474A00FB0EB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		131CCD4419D0475000FB0EB3 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		131CCD4619D0475400FB0EB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		131CCD4819D0475900FB0EB3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		131CCD4A19D0475D00FB0EB3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1343120419D1779E0090C7C5 /* ItScosftSdksocializeBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeBarView.h; path = Classes/ItScosftSdksocializeBarView.h; sourceTree = "<group>"; };
+		1343120519D1779E0090C7C5 /* ItScosftSdksocializeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeBarView.m; path = Classes/ItScosftSdksocializeBarView.m; sourceTree = "<group>"; };
+		1343120819D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeBarViewProxy.h; path = Classes/ItScosftSdksocializeBarViewProxy.h; sourceTree = "<group>"; };
+		1343120919D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeBarViewProxy.m; path = Classes/ItScosftSdksocializeBarViewProxy.m; sourceTree = "<group>"; };
+		13BBD0C419EE5C3400EA0EE2 /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pinterest.framework; path = ../DaInserireInFramework/Pinterest.framework; sourceTree = "<group>"; };
+		13BBD0C519EE5C3400EA0EE2 /* Socialize.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Socialize.framework; path = ../DaInserireInFramework/Socialize.framework; sourceTree = "<group>"; };
+		24DD6CF71134B3F500162E58 /* ItScosftSdksocializeModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeModule.h; path = Classes/ItScosftSdksocializeModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ItScosftSdksocializeModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeModule.m; path = Classes/ItScosftSdksocializeModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItScosftSdksocializeModuleAssets.h; path = Classes/ItScosftSdksocializeModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItScosftSdksocializeModuleAssets.m; path = Classes/ItScosftSdksocializeModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ItScosftSdksocialize_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItScosftSdksocialize_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libItScosftSdksocialize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libItScosftSdksocialize.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BBD0C619EE5C3400EA0EE2 /* Pinterest.framework in Frameworks */,
+				13BBD0C719EE5C3400EA0EE2 /* Socialize.framework in Frameworks */,
+				131CCD4B19D0475D00FB0EB3 /* AdSupport.framework in Frameworks */,
+				131CCD4919D0475900FB0EB3 /* CoreGraphics.framework in Frameworks */,
+				131CCD4719D0475400FB0EB3 /* QuartzCore.framework in Frameworks */,
+				131CCD4519D0475000FB0EB3 /* MessageUI.framework in Frameworks */,
+				131CCD4319D0474A00FB0EB3 /* MapKit.framework in Frameworks */,
+				131CCD4119D0474400FB0EB3 /* CoreLocation.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libItScosftSdksocialize.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* SDKSocialize */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = SDKSocialize;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13BBD0C419EE5C3400EA0EE2 /* Pinterest.framework */,
+				13BBD0C519EE5C3400EA0EE2 /* Socialize.framework */,
+				131CCD4A19D0475D00FB0EB3 /* AdSupport.framework */,
+				131CCD4819D0475900FB0EB3 /* CoreGraphics.framework */,
+				131CCD4619D0475400FB0EB3 /* QuartzCore.framework */,
+				131CCD4419D0475000FB0EB3 /* MessageUI.framework */,
+				131CCD4219D0474A00FB0EB3 /* MapKit.framework */,
+				131CCD4019D0474400FB0EB3 /* CoreLocation.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* ItScosftSdksocializeModule.h */,
+				24DD6CF81134B3F500162E58 /* ItScosftSdksocializeModule.m */,
+				1343120419D1779E0090C7C5 /* ItScosftSdksocializeBarView.h */,
+				1343120519D1779E0090C7C5 /* ItScosftSdksocializeBarView.m */,
+				1343120819D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.h */,
+				1343120919D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.m */,
+				13019B1619D464FA00EA0F96 /* ItScosftSdksocializeLikeView.h */,
+				13019B1719D464FA00EA0F96 /* ItScosftSdksocializeLikeView.m */,
+				13019B1A19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.h */,
+				13019B1B19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ItScosftSdksocialize_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13019B1819D464FA00EA0F96 /* ItScosftSdksocializeLikeView.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* ItScosftSdksocialize_Prefix.pch in Headers */,
+				1343120619D1779E0090C7C5 /* ItScosftSdksocializeBarView.h in Headers */,
+				1343120A19D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.h in Headers */,
+				24DD6CF91134B3F500162E58 /* ItScosftSdksocializeModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.h in Headers */,
+				13019B1C19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* SDKSocialize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SDKSocialize" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKSocialize;
+			productName = SDKSocialize;
+			productReference = D2AAC07E0554694100DB518D /* libItScosftSdksocialize.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SDKSocialize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* SDKSocialize */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* SDKSocialize */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13019B1919D464FA00EA0F96 /* ItScosftSdksocializeLikeView.m in Sources */,
+				24DD6CFA1134B3F500162E58 /* ItScosftSdksocializeModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* ItScosftSdksocializeModuleAssets.m in Sources */,
+				13019B1D19D4650800EA0F96 /* ItScosftSdksocializeLikeViewProxy.m in Sources */,
+				1343120719D1779E0090C7C5 /* ItScosftSdksocializeBarView.m in Sources */,
+				1343120B19D177AC0090C7C5 /* ItScosftSdksocializeBarViewProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* SDKSocialize */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ItScosftSdksocialize.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Socialize.embeddedframework",
+					"$(PROJECT_DIR)",
+					/Users/francesco/Documents/Xcode/SDKSocialize/DaInserireInFramework,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ItScosftSdksocialize_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = ItScosftSdksocialize;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/ItScosftSdksocialize.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Socialize.embeddedframework",
+					"$(PROJECT_DIR)",
+					/Users/francesco/Documents/Xcode/SDKSocialize/DaInserireInFramework,
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ItScosftSdksocialize_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = ItScosftSdksocialize;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/ItScosftSdksocialize.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ItScosftSdksocialize_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ItScosftSdksocialize;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/ItScosftSdksocialize.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ItScosftSdksocialize_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ItScosftSdksocialize;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "SDKSocialize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "SDKSocialize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

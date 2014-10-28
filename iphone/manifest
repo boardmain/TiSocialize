@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.1.0
+apiversion: 2
+description: SDKSocialize
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2014 by Your Company
+
+# these should not be edited
+name: SDKSocialize
+moduleid: it.scosft.sdksocialize
+guid: e2591cec-2166-41f6-9f08-80d59a788bde
+platform: iphone
+minsdk: 3.3.0.GA
