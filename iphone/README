@@ -1,151 +1,179 @@
-Appcelerator Titanium iPhone Module Project
-===========================================
+# Titanium Socialize SDK Module
 
-This is a skeleton Titanium Mobile iPhone module project.  Modules can be 
-used to extend the functionality of Titanium by providing additional native
-code that is compiled into your application at build time and can expose certain
-APIs into JavaScript. 
+## Description
 
-MODULE NAMING
---------------
+With this module you can use the [Socialize SDK](http://getsocialize.com) To you IOS App
 
-Choose a unique module id for your module.  This ID usually follows a namespace
-convention using DNS notation.  For example, com.appcelerator.module.test.  This
-ID can only be used once by all public modules in Titanium.
+## Quick Start
+- Clone this Repository
+- Copy the content of the folder "AddToYourFrameWorkFolder" to a folder in your system and put the path to the file iphone/module.xcconfig and replace this TITANIUM_THIRDPARTY = "/Users/francesco/Library/Application\ Support/Titanium/thirdparty" with your path
+- Copy the content of the folder "AddToYourAppAssetsFolder" in your assets folder (for alloy project) or Resource folder (for standard project)
+- build the module with build.py script and add it to titanium	
+- modify the CFBundleURLName and CFBundleURLSchemes to your tiapp.xml with your app url
+ 
 
+## TODO
+Fix Pinterset Share
+Fix OpenApp from Socialize View
 
-COMPONENTS
------------
+## RESULTS AND PREVIEW
 
-Components that are exposed by your module must follow a special naming convention.
-A component (widget, proxy, etc) must be named with the pattern:
+you can try  the result with the  [Vangle APP](https://itunes.apple.com/it/app/vangle-shop/id746300889?mt=8&uo=4) and here se the [Socialize social Page](http://besoci.al/yQgTT)
 
-	Ti<ModuleName><ComponentName>Proxy
-
-For example, if you component was called Foo, your proxy would be named:
-
-	TiMyfirstFooProxy
-	
-For view proxies or widgets, you must create both a view proxy and a view implementation. 
-If you widget was named proxy, you would create the following files:
-
-	TiMyfirstFooProxy.h
-	TiMyfirstFooProxy.m
-	TiMyfirstFoo.h
-	TiMyfirstFoo.m
-	
-The view implementation is named the same except it does contain the suffix `Proxy`.  
-
-View implementations extend the Titanium base class `TiUIView`.  View Proxies extend the
-Titanium base class `TiUIViewProxy` or `TiUIWidgetProxy`.  
-
-For proxies that are simply native objects that can be returned to JavaScript, you can 
-simply extend `TiProxy` and no view implementation is required.
+[![Video Preview](http://img.youtube.com/vi/EaB72VhLa0I/0.jpg)](http://youtu.be/EaB72VhLa0I)
 
 
-GET STARTED
-------------
+## DONATIONS
 
-1. Edit manifest with the appropriate details about your module.
-2. Edit LICENSE to add your license details.
-3. Place any assets (such as PNG files) that are required in the assets folder.
-4. Edit the titanium.xcconfig and make sure you're building for the right Titanium version.
-5. Code and build.
+If you like my work and help me to mantain updated this module you can donate with paypal
 
-BUILD TIME COMPILER CONFIG
---------------------------
-
-You can edit the file `module.xcconfig` to include any build time settings that should be
-set during application compilation that your module requires.  This file will automatically get `#include` in the main application project.  
-
-For more information about this file, please see the Apple documentation at:
-
-<http://developer.apple.com/mac/library/documentation/DeveloperTools/Conceptual/XcodeBuildSystem/400-Build_Configurations/build_configs.html>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=samuele%2ecoppede%40gmail%2ecom&lc=IT&item_name=Titanium%20SDK%20Socialize%20Module&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="[paypal]" /></a>
 
 
-DOCUMENTATION FOR YOUR MODULE
------------------------------
+## Community Driven
 
-You should provide at least minimal documentation for your module in `documentation` folder using the Markdown syntax.
-
-For more information on the Markdown syntax, refer to this documentation at:
-
-<http://daringfireball.net/projects/markdown/>
+I encourage everyone to send Pull Requests - keeping this module flying with new features.
 
 
-TEST HARNESS EXAMPLE FOR YOUR MODULE
-------------------------------------
+## Author
 
-The `example` directory contains a skeleton application test harness that can be 
-used for testing and providing an example of usage to the users of your module.
+**Samuele Coppede'**  
+web: http://www.scsoft.it  
+email: samuele@scsoft.it
+twitter: @samuele81
 
 
-INSTALL YOUR MODULE
---------------------
 
-1. Run `build.py` which creates your distribution
-2. cd to `/Library/Application Support/Titanium`
-3. copy this zip file into the folder of your Titanium SDK
+# Example 
 
-REGISTER YOUR MODULE
----------------------
+```javascript
 
-Register your module with your application by editing `tiapp.xml` and adding your module.
-Example:
+var sdksocialize = require('it.scosft.sdksocialize');
 
-<modules>
-	<module version="0.1">__MODULE_ID__</module>
-</modules>
+sdksocialize.init({
+    "socializeKey" : "SOCIALIZE-KEY",
+    "socializeSecret" :"SOCIALIZE-SECRET",
+    "twitterConsumerKey" :"TWITTER-CONSUMER",
+    "twitterConsumerSecret":"TWITTER-CONSUMER-SECRET",
+    "pinterestApp":"PINTEREST-KEY",
+    "facebokAppID":"FACEBOOK-APP-ID"
+});
+function doClick(e) {
+    alert($.label.text);
+}
 
-When you run your project, the compiler will know automatically compile in your module
-dependencies and copy appropriate image assets into the application.
+var testView = Ti.UI.createView({
+    width:Ti.UI.FILL,
+    height:250,
+    backgroundColor:'blue',
+    top:50
+});
 
-USING YOUR MODULE IN CODE
--------------------------
+var bar3 = sdksocialize.createBarView({
+   height:44,
+   width:Ti.UI.FILL,
+   image:"http://vangle.cdnscsoft.com/image/cache/data/borse/buste/borsa-in-pelle-fiorita-390x390.jpg",
+   url:"http://shop.vangle.it/store",
+   name:"Vangle",
+   description:"Ciao ciaoc iao ciao caio",
+   bgColor:'green',
+   alpha:0.8,
+});
+testView.add(bar3);
 
-To use your module in code, you will need to require it. 
+$.index.add(testView);
 
-For example,
 
-	var my_module = require('__MODULE_ID__');
-	my_module.foo();
+var bar2 = sdksocialize.createLikeView({
+   bottom:20,
+   height:100,
+   width:200,
+   url:"http://vangle.cdnscsoft.com/image/cache/data/borse/buste/borsa-in-pelle-fiorita-390x390.jpg",
+   image:"http://vangle.cdnscsoft.com/image/cache/data/borse/buste/borsa-in-pelle-fiorita-390x390.jpg",
+   name:"Panzone",
+   backgroundColor:"black"
+});
+$.index.add(bar2);
 
-WRITING PURE JS NATIVE MODULES
+$.index.open();
+
+
+Ti.App.addEventListener('resumed', function (e) {
+    // Ti.Platform.openURL('fb827787213920034://page/confirm?id=5');
+
+    Ti.App.launchURL = '';
+    cmd = Ti.App.getArguments();
+    if ( cmd.url ) {
+        if ( cmd.url != Ti.App.pauseURL ) {
+            Ti.App.launchURL = cmd.url;
+            Ti.API.info( 'Resumed with url = ' + Ti.App.launchURL );
+           
+        }
+    }
+   
+    Ti.API.info('URL DA APP:'+Ti.App.launchURL);
+    sdksocialize.handleOpenURL(Ti.App.launchURL);
+});
+
+```
+
+
+##API
+
+
+```objective-c
+//create Socialize Bar
+sdksocialize.createBarView({
+	width:'',
+	height:'',
+	url:URL,
+	image:IMAGEURL,
+	name:NAME,
+	description:DESCRIPTION,
+	bgColor:BGCOLOR,
+	alpha:ALPHA
+});
+
+
+
+//Create Like View
+sdksocialize.createLikeView({
+	width:'',
+	height:'',
+	url:URL,
+	image:IMAGEURL,
+	name:NAME,
+	description:DESCRIPTION,
+	bgColor:BGCOLOR,
+	alpha:ALPHA	
+});
+
+```
+
+
+## License
+
+
+    Copyright (c) 2010-2014 Samuele Coppede
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+    
+
+
 ------------------------------
-
-You can write a pure JavaScript "natively compiled" module.  This is nice if you
-want to distribute a JS module pre-compiled.
-
-To create a module, create a file named __MODULE_ID__.js under the assets folder.
-This file must be in the Common JS format.  For example:
-
-	exports.echo = function(s)
-	{
-		return s;
-	};
-	
-Any functions and properties that are exported will be made available as part of your
-module.  All other code inside your JS will be private to your module.
-
-For pure JS module, you don't need to modify any of the Objective-C module code. You
-can leave it as-is and build.
-
-TESTING YOUR MODULE
--------------------
-
-Run the `titanium.py` script to test your module or test from within XCode.
-To test with the script, execute:
-
-	titanium run --dir=YOURMODULEDIR
-	
-
-This will execute the app.js in the example folder as a Titanium application.
-
-
-DISTRIBUTING YOUR MODULE
--------------------------
-
-Currently, you will need to manually distribution your module distribution zip file directly. However, in the near future, we will make module distribution and sharing built-in to Titanium Developer and in the Titanium Marketplace!
-
-
-Cheers!
